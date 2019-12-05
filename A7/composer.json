@@ -1,0 +1,24 @@
+{
+  "name": "ArmineKhachatryan/A7",
+  "description": "PHP AOP mini helper",
+  "minimum-stability": "dev",
+  "autoload" : {
+    "psr-4": {
+      "A7\\" : "src/A7",
+      "A7\\Tests\\" : "Tests"
+    }
+  },
+  "authors": [
+    {
+      "name": "Armine Khachatryan",
+      "email": "armine.khachatryan@betconstruct.com"
+    }
+  ],
+  "require": {
+    "doctrine/annotations": "1.*",
+    "apache/log4php": "2.3.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit" : "*"
+  }
+}
