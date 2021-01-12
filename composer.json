@@ -15,7 +15,7 @@
     }
   ],
   "require": {
-    "doctrine/annotations": "1.*",
+    "doctrine/annotations": "*",
     "apache/log4php": "2.3.0"
   },
   "require-dev": {
