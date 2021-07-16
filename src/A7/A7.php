@@ -69,7 +69,7 @@ class A7 implements A7Interface
         foreach(ReflectionUtils::getInstance()->getParametersReflection($className, $method) as $parameter) {
             $parameterName = $parameter->getName();
             if(array_key_exists($parameterName, $arguments)) {
-                if($parameter->getType() && $param->getType()->getName() === 'array') {
+                if($parameter->getType() && $parameter->getType()->getName() === 'array') {
                     $arguments[$parameterName] = (array)$arguments[$parameterName];
                 }
                 $callParams[] =& $arguments[$parameterName];
@@ -77,7 +77,7 @@ class A7 implements A7Interface
                 $val = null;
                 if($parameter->isDefaultValueAvailable()) {
                     $val = $parameter->getDefaultValue();
-                } elseif($parameter->getType() && $param->getType()->getName() === 'array') {
+                } elseif($parameter->getType() && $parameter->getType()->getName() === 'array') {
                     $val = [];
                 }
                 $callParams[] = $val;
